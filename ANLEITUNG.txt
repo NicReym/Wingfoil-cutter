@@ -1,0 +1,30 @@
+WINGFOIL REEL CUTTER - APK FÜR ANDROID BAUEN
+=============================================
+
+Die APK wird kostenlos in der Cloud gebaut (GitHub). Du brauchst nichts zu installieren.
+
+1. Gehe auf github.com und erstelle ein kostenloses Konto (falls du keins hast).
+2. Oben rechts auf "+" klicken, dann "New repository". Name zum Beispiel: wingfoil-app.
+   "Create repository" klicken.
+3. Auf der neuen Seite den Link "uploading an existing file" anklicken.
+4. Entpacke die ZIP-Datei auf dem PC. Ziehe ALLES aus dem entpackten Ordner (auch den
+   Ordner ".github") in das Upload-Fenster. Unten "Commit changes" klicken.
+5. Oben auf den Reiter "Actions" gehen. Dort läuft jetzt "APK bauen" (dauert etwa 5 Minuten).
+   Wenn ein grüner Haken erscheint, auf den Eintrag klicken.
+6. Ganz unten bei "Artifacts" auf "WingfoilReelCutter-APK" klicken. Eine ZIP-Datei wird
+   geladen. Entpacken: darin liegt app-debug.apk.
+7. Schicke die APK aufs Samsung (USB-Kabel, Google Drive, E-Mail an dich selbst).
+8. Auf dem Handy die APK antippen. Android fragt, ob die App Apps installieren darf: erlauben.
+   Ein Hinweis von Google Play Protect: "Trotzdem installieren".
+
+Falls der Ordner ".github" beim Hochladen fehlt: Im Repository "Add file" > "Create new file",
+als Namen  .github/workflows/build-apk.yml  eingeben und den Inhalt der Datei build-apk.yml
+einfügen.
+
+Alternative mit Android Studio (kostenlos): Ordner öffnen, oben "Build" > "Build Bundle(s) /
+APK(s)" > "Build APK(s)".
+
+HINWEISE
+- Beim ersten Start braucht die App Internet (KI-Modelle und Umwandlungs-Modul werden geladen).
+- Fertige Reels landen in der Galerie unter Filme/WingfoilReels.
+- Bildschirm währenddessen anlassen, die App darf nicht in den Hintergrund.
